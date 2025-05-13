@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import Image from "next/image"
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import Image from "next/image";
 
 export function HeroSection() {
   return (
@@ -12,8 +12,9 @@ export function HeroSection() {
               Manage tasks and collaborate with your team
             </h1>
             <p className="text-lg text-muted-foreground max-w-[600px]">
-              TaskMaster helps you organize your work, collaborate with your team, and get more done. Track tasks,
-              manage projects, and meet deadlines with ease.
+              TaskMaster helps you organize your work, collaborate with your
+              team, and get more done. Track tasks, manage projects, and meet
+              deadlines with ease.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row">
               <Link href="/signup">
@@ -22,7 +23,11 @@ export function HeroSection() {
                 </Button>
               </Link>
               <Link href="/login">
-                <Button variant="outline" size="lg" className="w-full sm:w-auto">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="w-full sm:w-auto"
+                >
                   Log In
                 </Button>
               </Link>
@@ -30,7 +35,7 @@ export function HeroSection() {
           </div>
           <div className="relative h-[400px] lg:h-[500px] rounded-lg overflow-hidden">
             <Image
-              src="/placeholder.svg?height=500&width=600"
+              src="/front-page-image.jpg?height=500&width=600"
               alt="TaskMaster Dashboard"
               fill
               className="object-cover"
@@ -40,5 +45,5 @@ export function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

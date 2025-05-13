@@ -202,17 +202,6 @@ taskmaster/
 └── tsconfig.json # TypeScript configuration
 ```
 
-## 📸 Screenshots
-
-![Dashboard](./public/screenshots/dashboard.png)
-_Dashboard with task overview and statistics_
-
-![Task Management](./public/screenshots/tasks.png)
-_Task management interface with filtering_
-
-![Project Details](./public/screenshots/project-detail.png)
-_Project details with associated tasks_
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
