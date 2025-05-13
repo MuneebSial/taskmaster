@@ -24,6 +24,7 @@ TaskMaster addresses the challenges of modern team collaboration and task manage
 - **Solution**: TaskMaster provides a centralized platform where teams can create, assign, and track tasks in real-time, organize work into projects, and maintain clear visibility of progress.
 
 **Target Users**:
+
 - Small to medium-sized teams
 - Project managers
 - Freelancers managing multiple clients
@@ -32,11 +33,13 @@ TaskMaster addresses the challenges of modern team collaboration and task manage
 ## ✨ Features
 
 - **User Authentication**
+
   - Secure email/password authentication
   - User profile management with avatar uploads
   - Protected routes and session management
 
 - **Task Management**
+
   - Create, edit, and delete tasks
   - Set priorities (low, medium, high)
   - Track status (to-do, in progress, completed)
@@ -44,12 +47,14 @@ TaskMaster addresses the challenges of modern team collaboration and task manage
   - Filter tasks by various criteria
 
 - **Project Organization**
+
   - Group tasks into projects
   - Track project status and progress
   - View all tasks within a project
   - Project descriptions and metadata
 
 - **Dashboard & Analytics**
+
   - Overview of task status distribution
   - Recent tasks and projects
   - Quick access to important information
@@ -61,6 +66,7 @@ TaskMaster addresses the challenges of modern team collaboration and task manage
 ## 🛠 Tech Stack
 
 ### Frontend
+
 - **Next.js 14** - React framework with App Router
 - **TypeScript** - Type-safe JavaScript
 - **Tailwind CSS** - Utility-first CSS framework
@@ -69,6 +75,7 @@ TaskMaster addresses the challenges of modern team collaboration and task manage
 - **Lucide Icons** - Beautiful, consistent icons
 
 ### Backend
+
 - **Supabase** - Open-source Firebase alternative
   - **Supabase Auth** - Authentication and user management
   - **Supabase Database** - PostgreSQL database with RLS
@@ -76,6 +83,7 @@ TaskMaster addresses the challenges of modern team collaboration and task manage
   - **Supabase Realtime** - Real-time data updates
 
 ### DevOps
+
 - **Vercel** - Deployment and hosting
 - **GitHub** - Version control
 
@@ -86,15 +94,18 @@ TaskMaster follows a modern architecture leveraging Next.js App Router and Supab
 ### Design Patterns
 
 1. **Server Components & Client Components**
+
    - Server components for data fetching and initial rendering
    - Client components for interactive elements
    - Clear separation with "use client" directive
 
 2. **Repository Pattern**
+
    - Supabase client abstracts database operations
    - Centralized data access through service functions
 
 3. **Context Provider Pattern**
+
    - SupabaseProvider for authentication state
    - Theme provider for dark/light mode
 
@@ -105,11 +116,11 @@ TaskMaster follows a modern architecture leveraging Next.js App Router and Supab
 
 ### Data Flow
 
-\`\`\`
+```
 User Interaction → Client Component → Server Action → Supabase → Database
-                                     ↓
-                 UI Update ← State Update ← Response
-\`\`\`
+↓
+UI Update ← State Update ← Response
+```
 
 ### Security
 
@@ -129,16 +140,16 @@ User Interaction → Client Component → Server Action → Supabase → Databas
 
 1. **Clone the repository**
 
-\`\`\`bash
-git clone https://github.com/yourusername/taskmaster.git
+```bash
+git clone https://github.com/MuneebSial/taskmaster.git
 cd taskmaster
-\`\`\`
+```
 
 2. **Install dependencies**
 
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 3. **Set up Supabase**
 
@@ -146,16 +157,16 @@ npm install
 - Run the SQL from `supabase/schema.sql` in the SQL Editor
 - Create a `.env.local` file with your Supabase credentials:
 
-\`\`\`
+```
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-\`\`\`
+```
 
 4. **Run the development server**
 
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 5. **Open your browser**
 
@@ -169,38 +180,38 @@ Deploy to Vercel with one click:
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 taskmaster/
-├── app/                  # Next.js App Router
-│   ├── auth/             # Authentication routes
-│   ├── dashboard/        # Dashboard and app features
-│   ├── profile/          # User profile management
-│   ├── layout.tsx        # Root layout
-│   └── page.tsx          # Landing page
-├── components/           # React components
-│   ├── ui/               # UI components (shadcn)
-│   └── ...               # Feature-specific components
-├── lib/                  # Utility functions
-│   ├── supabase-server.ts # Server-side Supabase client
-│   └── utils.ts          # Helper functions
-├── public/               # Static assets
-├── supabase/             # Supabase configuration
-│   └── schema.sql        # Database schema
-├── middleware.ts         # Next.js middleware for auth
-├── package.json          # Dependencies
-└── tsconfig.json         # TypeScript configuration
-\`\`\`
+├── app/ # Next.js App Router
+│ ├── auth/ # Authentication routes
+│ ├── dashboard/ # Dashboard and app features
+│ ├── profile/ # User profile management
+│ ├── layout.tsx # Root layout
+│ └── page.tsx # Landing page
+├── components/ # React components
+│ ├── ui/ # UI components (shadcn)
+│ └── ... # Feature-specific components
+├── lib/ # Utility functions
+│ ├── supabase-server.ts # Server-side Supabase client
+│ └── utils.ts # Helper functions
+├── public/ # Static assets
+├── supabase/ # Supabase configuration
+│ └── schema.sql # Database schema
+├── middleware.ts # Next.js middleware for auth
+├── package.json # Dependencies
+└── tsconfig.json # TypeScript configuration
+```
 
 ## 📸 Screenshots
 
 ![Dashboard](./public/screenshots/dashboard.png)
-*Dashboard with task overview and statistics*
+_Dashboard with task overview and statistics_
 
 ![Task Management](./public/screenshots/tasks.png)
-*Task management interface with filtering*
+_Task management interface with filtering_
 
 ![Project Details](./public/screenshots/project-detail.png)
-*Project details with associated tasks*
+_Project details with associated tasks_
 
 ## 🤝 Contributing
 
@@ -218,4 +229,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-Built with ❤️ by [Your Name](https://github.com/yourusername)
+Built with ❤️ by [Muneeb Sial](https://github.com/MuneebSial)
