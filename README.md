@@ -1,7 +1,5 @@
 # TaskMaster - Collaborative Task Management Application
 
-![TaskMaster Logo](./public/taskmaster-logo.png)
-
 TaskMaster is a modern, collaborative task management application built with Next.js and Supabase. It helps teams organize work, track progress, and meet deadlines efficiently.
 
 ## 📋 Table of Contents
@@ -219,3 +217,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ---
 
 Built with ❤️ by [Muneeb Sial](https://github.com/MuneebSial)
+
+Visit TaskMaster from[here](https://taskmaster-khaki-psi.vercel.app/)
